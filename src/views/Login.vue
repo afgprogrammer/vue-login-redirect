@@ -21,8 +21,8 @@
                         </div>
                         <br>
                         <div class="form-group d-flex justify-content-center">
-                            <button class="btn btn-primary w-25" @click.prevent="login" v-if="!isLoggingIn">Login</button>
-                            <button class="btn btn-primary w-25" @click.prevent="login" v-if="isLoggingIn"><loader-component width="30"></loader-component></button>
+                            <button class="btn btn-primary w-25" id="login" @click.prevent="login" v-if="!isLoggingIn">Login</button>
+                            <button class="btn btn-primary w-25" disabled @click.prevent="login" v-if="isLoggingIn"><loader-component width="30"></loader-component></button>
                         </div>
                     </form>
                 </div>
