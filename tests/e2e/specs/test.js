@@ -11,5 +11,6 @@ describe('Login test', () => {
     cy.get('#login').click()
     cy.wait(2000)
     cy.request('/')
+    cy.contains('h1', 'Welcome to Your Vue.js App')
   })
 })
