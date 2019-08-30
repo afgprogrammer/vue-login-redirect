@@ -73,6 +73,7 @@ export default {
         position: absolute;
         width: 100%;
         top: 100px;
+        transition: all .5s;
         &.alert-primary {
             background-color: #007BFF;
             color: #fff;
